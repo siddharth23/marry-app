@@ -1,0 +1,1 @@
+$(document).ready ->$("#signup").on 'click', (e) ->e.preventDefault();$("#divCheckbox").toggle();$("#hometext").toggle();
