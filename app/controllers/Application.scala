@@ -8,4 +8,6 @@ class Application extends Controller {
   def index = Action {
     Ok(views.html.index())
   }
+
+  def afterResponse() = SignUpController.register()
 }

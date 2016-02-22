@@ -16,3 +16,5 @@ GET         /webjars/*file          controllers.WebJarAssets.at(file)
 
 GET /profile/:id controllers.ProfileController.getProfile(id:String)
 
+POST  /signup controllers.Application.afterResponse()
+

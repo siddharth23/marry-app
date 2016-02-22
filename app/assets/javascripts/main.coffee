@@ -1,1 +1,2 @@
-$(document).ready ->$("#signup").on 'click', (e) ->e.preventDefault();$("#divCheckbox").toggle();$("#hometext").toggle();
+$(document).ready ->
+     $("#signup").on 'click', (e)->e.preventDefault();$("#divCheckbox").toggle();$("#hometext").toggle(); $.post "/signup?firstname="+$("#firstname").val()+"&email="+$("#email").val(), (data)->$("#signup").text(data);
